@@ -1,11 +1,11 @@
 import React from "react";
 import { Link } from "react-router-dom";
-const Navbar = () => {
+const Navbar = (props) => {
   return (
     <div>
       <nav className="navbar navbar-expand-lg bg-primary">
         <div className="container-fluid">
-          <Link className="navbar-brand text-white fw-bold" to="/number">
+          <Link className="navbar-brand text-white fw-bold mx-2" to="/">
             IDNUM
           </Link>
           <button
@@ -22,12 +22,47 @@ const Navbar = () => {
           <div className="collapse navbar-collapse" id="navbarSupportedContent">
             <ul className="navbar-nav me-auto mb-2 mb-lg-0">
               <li className="nav-item">
-                <Link className="nav-link active text-white fw-bold" aria-current="page" to="/">
+                <Link className="nav-link active text-white fw-bold mx-2" aria-current="page" to="/">
                   Home
                 </Link>
               </li>
               <li className="nav-item">
-                <Link className="nav-link fw-bold text-white" to="/about">
+                <Link className="nav-link fw-bold mx-2 text-white" to="/+1">
+                  +1
+                </Link>
+              </li>
+              <li className="nav-item">
+                <Link className="nav-link fw-bold mx-2 text-white" to="/+10">
+                  +10
+                </Link>
+              </li>
+              <li className="nav-item">
+                <Link className="nav-link fw-bold mx-2 text-white" to="/+100">
+                  +100
+                </Link>
+              </li>
+              <li className="nav-item">
+                <Link className="nav-link fw-bold mx-2 text-white" to="/+500">
+                  +500
+                </Link>
+              </li>
+              <li className="nav-item">
+                <Link className="nav-link fw-bold mx-2 text-white" to="/+1000">
+                  +1000
+                </Link>
+              </li>
+              <li className="nav-item">
+                <Link className="nav-link fw-bold mx-2 text-white" to="/+10000">
+                  +10000
+                </Link>
+              </li>
+              <li className="nav-item">
+                <Link className="nav-link fw-bold mx-2 text-white" to="/+100000">
+                  +100000
+                </Link>
+              </li>
+              <li className="nav-item">
+                <Link className="nav-link fw-bold mx-2 text-white" to="/about">
                   About
                 </Link>
               </li>
